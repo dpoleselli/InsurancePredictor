@@ -14,7 +14,11 @@ import weka.filters.unsupervised.attribute.Normalize;
 public class InsurancePrediction {
 
 	public static void main(String[] args) throws Exception {
-		DataSource source = new DataSource("insurance.csv");
+		if(args.length != 1) {
+			System.out.println("Please provide an input file for training");
+			System.exit(2);
+		}
+		DataSource source = new DataSource(args[0]);
 		Instances dataset = source.getDataSet();
 		dataset.setClassIndex(dataset.numAttributes() - 1);
 		Normalize filter = new Normalize();
