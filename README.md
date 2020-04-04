@@ -1,6 +1,6 @@
 # Insurance Prediction
 
-Basic java program to predict insurance price based on few parameters.
+Basic java program to predict insurance price based on few a parameters.
 
 ## Description
 
@@ -15,7 +15,7 @@ the predicted insurance price.
 - Age
 - Sex
 - BMI
-- # of children
+- Number of children
 - Smoker(T/F)
 - Location
 
